@@ -1,0 +1,35 @@
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  width: 100%;
+  margin: var(--spacing-lg) 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+.auth-divider-text {
+  font-family: var(--font-dm-sans);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-text);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-divider {
+    margin: var(--spacing-md) 0;
+  }
+
+  .auth-divider-text {
+    font-size: 14px;
+  }
+}

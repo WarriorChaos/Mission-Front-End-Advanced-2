@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8f7f7"/>
+  <rect x="22" y="22" width="1556" height="856" rx="18" fill="none" stroke="#e9e5e5" stroke-width="3"/>
+  <path d="M1120 22h265l-265 265c-42 42-110-26-68-68l197-197c43-43 111 25 68 68l-104 104c-43 43-111-25-68-68l90-90" fill="#00b653"/>
+  <path d="M1120 22h165l-165 165c-27 27-69-15-42-42l123-123c27-27 69 15 42 42l-67 67c-27 27-69-15-42-42l53-53" fill="#087f43"/>
+  <path d="M22 650c0-30 36-44 57-23l120 120c42 42-26 110-68 68L22 776z" fill="#00b653"/>
+  <path d="M22 735l102 102c27 27-15 69-42 42l-60-60z" fill="#087f43"/>
+  <path d="M1010 22h112l-112 112c-27 27-69-15-42-42l70-70c27-27 69 15 42 42l-27 27" fill="#ffc82e"/>
+  <path d="M22 778l100 100H22z" fill="#ffc82e"/>
+  <circle cx="1378" cy="263" r="36" fill="#ffc82e"/>
+  <circle cx="214" cy="648" r="27" fill="#ffc82e"/>
+  <path d="M1392 315l12 12m-12 0 12-12M174 594l12 12m-12 0 12-12" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="1290" cy="250" r="11" fill="none" stroke="#fff" stroke-width="5"/>
+  <circle cx="267" cy="728" r="9" fill="none" stroke="#fff" stroke-width="4"/>
+  <circle cx="1335" cy="218" r="6" fill="#fff"/>
+  <circle cx="246" cy="684" r="6" fill="#fff"/>
+  <circle cx="800" cy="745" r="52" fill="#f4c62e" stroke="#078047" stroke-width="12"/>
+  <circle cx="800" cy="745" r="34" fill="#078047" stroke="#f4c62e" stroke-width="6"/>
+  <path d="M800 718l8 17 19 3-14 13 4 19-17-9-17 9 4-19-14-13 19-3z" fill="#ffc82e"/>
+
+    <g text-anchor="middle" font-family="Arial, sans-serif">
+      <text x="205" y="191" text-anchor="start" fill="#f28b00" font-size="31" font-weight="700">videobelajar</text>
+      <text x="800" y="281" fill="#007f40" font-size="84" font-weight="700">Certificate</text>
+      <text x="800" y="338" fill="#222325" font-size="43" font-weight="600">of Completion</text>
+      <text x="800" y="399" fill="#444" font-size="24">Proudly presented to</text>
+      <text x="800" y="489" fill="#f3a900" font-family="Georgia, serif" font-size="62" font-style="italic" textLength="1050" lengthAdjust="spacingAndGlyphs">Peserta Uji</text>
+      <text x="800" y="541" fill="#444" font-size="22">For successfully completing the course</text>
+      <text x="800" y="600" fill="#087c42" font-size="32" font-weight="700" textLength="1200" lengthAdjust="spacingAndGlyphs">Course Uji Sertifikat Dinamis</text>
+      <text x="800" y="696" fill="#4a4a4a" font-size="20">20 Oktober 2026</text>
+    </g></svg>

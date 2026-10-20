@@ -1,0 +1,108 @@
+.button {
+  font-family: var(--font-dm-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.button--md {
+  height: 42px;
+  padding: 0 var(--spacing-xl);
+}
+
+.button--lg {
+  height: 48px;
+  padding: 0 var(--spacing-2xl);
+}
+
+.button--sm {
+  height: 36px;
+  padding: 0 var(--spacing-lg);
+  font-size: 14px;
+}
+
+/* Variants */
+.button--primary {
+  background-color: var(--primary-green);
+  color: var(--bg-white);
+  border: none;
+}
+
+.button--primary:hover:not(:disabled) {
+  background-color: #2ba944;
+  box-shadow: 0 4px 12px rgba(62, 207, 76, 0.3);
+}
+
+.button--primary:active:not(:disabled) {
+  background-color: #22903c;
+  transform: scale(0.98);
+}
+
+.button--secondary {
+  background-color: var(--light-green);
+  color: var(--primary-green);
+  border: none;
+}
+
+.button--secondary:hover:not(:disabled) {
+  background-color: #d4f9c8;
+  box-shadow: 0 4px 12px rgba(62, 207, 76, 0.2);
+}
+
+.button--secondary:active:not(:disabled) {
+  background-color: #c7f4b9;
+}
+
+.button--outline {
+  background-color: transparent;
+  color: var(--dark-text);
+  border: 1px solid var(--border-light);
+}
+
+.button--outline:hover:not(:disabled) {
+  background-color: var(--bg-light);
+  border-color: var(--border-dark);
+}
+
+.button--outline:active:not(:disabled) {
+  background-color: #efefef;
+}
+
+/* Full width */
+.button--full-width {
+  width: 100%;
+}
+
+/* Disabled state */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button {
+    font-size: 14px;
+  }
+
+  .button--md {
+    height: 40px;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .button--lg {
+    height: 44px;
+    padding: 0 var(--spacing-xl);
+  }
+}

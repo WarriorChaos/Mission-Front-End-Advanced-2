@@ -1,0 +1,6 @@
+/* Base styles imported from global.css in App.jsx */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

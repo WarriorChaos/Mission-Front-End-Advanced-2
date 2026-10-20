@@ -1,0 +1,236 @@
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  position: relative;
+  width: min(100% - 48px, 1200px);
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 59px;
+}
+
+.header--logo-only .header-content {
+  justify-content: flex-start;
+}
+
+.header--logo-only .header-logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+.header-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-desktop {
+  gap: 28px;
+}
+
+.header-link {
+  font-family: var(--font-dm-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: #777;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 10px 0;
+}
+
+.header-link:hover,
+.header-menu-item:hover {
+  color: #ff5b35;
+}
+
+.header-account {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-avatar-button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 38px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header-avatar {
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #f4c744;
+  border-radius: 9px;
+  background: linear-gradient(145deg, #f6cc51, #de8e39 55%, #7350a5);
+  color: #fff;
+  font-family: var(--font-dm-sans);
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.header-dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: -1px;
+  z-index: 1001;
+  width: 150px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.1);
+}
+
+.header-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+  color: #777;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #ededed;
+  font: 500 12px var(--font-dm-sans);
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.header-menu-item:last-child {
+  border-bottom: 0;
+}
+
+.header-menu-item:hover {
+  background-color: #fffaf8;
+}
+
+.header-menu-logout {
+  justify-content: space-between;
+  color: #ff5638;
+}
+
+.header-menu-logout svg {
+  width: 16px;
+  height: 16px;
+}
+
+.header-menu-toggle,
+.header-mobile-menu {
+  display: none;
+}
+
+.header :focus-visible {
+  outline: 2px solid #ff704d;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .header-container {
+    width: 100%;
+  }
+
+  .header-content {
+    min-height: 82px;
+    padding: 0 24px;
+  }
+
+  .header--logo-only .header-content {
+    min-height: 70px;
+  }
+
+  .header--logo-only .header-logo img {
+    width: 156px;
+  }
+
+
+  .header-nav-desktop {
+    display: none;
+  }
+
+  .header-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 7px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .header-menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #535967;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .header-menu-toggle.is-open span:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header-menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header-menu-toggle.is-open span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .header-mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+    display: block;
+    width: 100%;
+    max-height: calc(100vh - 82px);
+    overflow-y: auto;
+    background: #fff;
+    border-top: 1px solid #e9e9e9;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .header-mobile-menu .header-menu-item {
+    min-height: 72px;
+    padding: 0 24px;
+    font-size: 18px;
+  }
+
+  .header-mobile-menu .header-menu-logout svg {
+    width: 22px;
+    height: 22px;
+  }
+}
